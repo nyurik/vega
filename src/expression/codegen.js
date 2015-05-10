@@ -52,7 +52,7 @@ var vg_expression_codegen = function(opt) {
           throw new Error("Illegal callee type: " + n.callee.type);
         }
         var callee = n.callee.name;
-        var args = n.arguments;
+        var args = n['arguments'];
         var fn = functions.hasOwnProperty(callee) && functions[callee];
         if (!fn) throw new Error("Unrecognized function: " + callee);
         return fn instanceof Function

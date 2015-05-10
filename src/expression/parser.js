@@ -1323,7 +1323,7 @@ var vg_expression_parser = (function() {
       finishCallExpression: function (callee, args) {
           this.type = Syntax.CallExpression;
           this.callee = callee;
-          this.arguments = args;
+          this['arguments'] = args;
           this.finish();
           return this;
       },

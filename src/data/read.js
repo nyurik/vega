@@ -2,7 +2,7 @@ vg.data.read = (function() {
   var formats = {},
       parsers = {
         "number": vg.number,
-        "boolean": vg.boolean,
+        "boolean": vg['boolean'],
         "date": vg.date
       };
 
