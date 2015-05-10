@@ -18,7 +18,7 @@ vg.parse.data = function(spec, callback) {
         model.load[d.name] = vg.data.read(data.toString(), d.format);
       }
       if (--count === 0) callback();
-    }
+    };
   }
   
   // process each data set definition
