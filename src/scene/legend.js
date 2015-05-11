@@ -452,7 +452,7 @@ function vg_vLegendLabels() {
       update: {
         opacity: {value: 1},
         x: {field: "offset", offset: 5},
-        y: {scale: "legend", field: "index"},
+        y: {scale: "legend", field: "index"}
       }
     }
   };
