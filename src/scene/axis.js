@@ -330,7 +330,7 @@ function vg_axisLabelExtend(orient, labels, oldScale, newScale, size, pad) {
   if (orient === "top" || orient === "bottom") {
     vg.extend(labels.properties.enter, {
       x: oldScale,
-      y: {value: size},
+      y: {value: size}
     });
     vg.extend(labels.properties.update, {
       x: newScale,
@@ -341,7 +341,7 @@ function vg_axisLabelExtend(orient, labels, oldScale, newScale, size, pad) {
   } else {
     vg.extend(labels.properties.enter, {
       x: {value: size},
-      y: oldScale,
+      y: oldScale
     });
     vg.extend(labels.properties.update, {
       x: {value: size},
@@ -373,7 +373,7 @@ function vg_axisTicksExtend(orient, ticks, oldScale, newScale, size) {
       y2: size
     });
     vg.extend(ticks.properties.exit, {
-      x:  newScale,
+      x:  newScale
     });        
   } else {
     vg.extend(ticks.properties.enter, {
@@ -387,7 +387,7 @@ function vg_axisTicksExtend(orient, ticks, oldScale, newScale, size) {
       y:  newScale
     });
     vg.extend(ticks.properties.exit, {
-      y:  newScale,
+      y:  newScale
     });
   }
 }
