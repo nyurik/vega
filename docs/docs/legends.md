@@ -82,38 +82,50 @@ The following example shows how to set custom fonts and a border on a legend for
 "legends": [
   {
     "fill": "color",
-      "encode": {
-        "title": {
-          "update": {
-            "fontSize": {"value": 14}
-          }
-        },
-        "labels": {
-          "interactive": true,
-          "update": {
-            "fontSize": {"value": 12},
-            "fill": {"value": "black"}
-          },
-          "hover": {
-            "fill": {"value": "firebrick"}
+    "encode": {
+      "title": {
+        "update": {
+          "fontSize": {
+            "value": 14
           }
         }
-        },
-        "symbols": {
-          "update": {
-            "stroke": {"value": "transparent"}
+      },
+      "labels": {
+        "interactive": true,
+        "update": {
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "black"
           }
         },
-        "legend": {
-          "update": {
-            "stroke": {"value": "#ccc"},
-            "strokeWidth": {"value": 1.5}
+        "hover": {
+          "fill": {
+            "value": "firebrick"
           }
+        }
+      }
+    },
+    "symbols": {
+      "update": {
+        "stroke": {
+          "value": "transparent"
+        }
+      }
+    },
+    "legend": {
+      "update": {
+        "stroke": {
+          "value": "#ccc"
+        },
+        "strokeWidth": {
+          "value": 1.5
         }
       }
     }
   }
 ]
-```
+  ```
 
 Custom text can be defined using the `text` property for `labels`. For example, one could define an ordinal scale that serves as a lookup table from a backing `value` to legend label text. In addition, one can set the `x` and `y` properties for the `legend` to perform custom positioning when _orient_ is `none`.
