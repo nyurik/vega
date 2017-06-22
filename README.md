@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vega/vega.svg?branch=master)](https://travis-ci.org/vega/vega)[![npm version](https://img.shields.io/npm/v/vega.svg?style=flat-square)](https://www.npmjs.com/package/vega)
+
 # Vega: A Visualization Grammar
 
 **Vega** is a *visualization grammar*, a declarative format for creating,
