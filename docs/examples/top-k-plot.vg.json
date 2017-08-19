@@ -44,11 +44,11 @@
         {
           "type": "window",
           "sort": {"field": "Gross", "order": "descending"},
-          "ops": ["row_number"], "as": ["rank"]
+          "ops": ["row_number"],
         },
         {
           "type": "filter",
-          "expr": "datum.rank <= k"
+          "expr": "datum.row_number <= k"
         }
       ]
     }

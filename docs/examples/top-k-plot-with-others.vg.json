@@ -50,7 +50,7 @@
         {
           "type": "window",
           "sort": {"field": "Gross", "order": "descending"},
-          "ops": ["row_number"], "as": ["rank"]
+          "ops": ["row_number"],
         }
       ]
     },
@@ -62,13 +62,13 @@
           "type": "lookup",
           "from": "ranks",
           "key": "Director",
-          "values": ["rank"],
+          "values": ["row_number"],
           "fields": ["Director"]
         },
         {
           "type": "formula",
           "as": "Category",
-          "expr": "datum.rank < k ? datum.Director : 'All Others'"
+          "expr": "datum.row_number < k ? datum.Director : 'All Others'"
         },
         {
           "type": "aggregate",
